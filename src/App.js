@@ -8,17 +8,15 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-import "./App.css";
-
-const App = () => {
+const App = () => (
   <Box width="400px" sx={{ width: { xl: "1488px" } }} m="auto">
     <Navbar />
     <Routes>
-      <Route path="/" element={<Home />} />;
+      <Route path="/" element={<Home />} />
       <Route path="/exercise/:id" element={<ExerciseDetail />} />
     </Routes>
     <Footer />
-  </Box>;
-};
+  </Box>
+);
 
 export default App;
